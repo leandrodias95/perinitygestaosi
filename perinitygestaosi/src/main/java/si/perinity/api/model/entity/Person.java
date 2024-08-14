@@ -29,7 +29,6 @@ public class Person {
 	private String name; 
 	
 	@Column(length = 500)
-	@NotEmpty(message = "{field.departament.required}")
 	private String department;
 	
 	 @OneToMany(mappedBy = "person", cascade = CascadeType.ALL, orphanRemoval = true)

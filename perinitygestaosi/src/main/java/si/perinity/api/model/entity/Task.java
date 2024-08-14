@@ -37,7 +37,6 @@ public class Task {
 	private LocalDate deadline;
 
 	@Column(length = 500)
-	@NotEmpty(message = "{field.departament.required}")
 	private String department;
 
 	@Column
