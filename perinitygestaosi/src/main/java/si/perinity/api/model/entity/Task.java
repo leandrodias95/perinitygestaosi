@@ -10,6 +10,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -33,20 +34,20 @@ public class Task {
 	private String description;
 
 	@Column
-	@NotEmpty(message = "{field.deadline.requered}")
+	@NotNull(message = "{field.deadline.requered}")
 	private LocalDate deadline;
 
 	@Column(length = 500)
 	private String department;
 
 	@Column
-	@NotEmpty(message = "{field.duration.requered}")
+	@NotNull(message = "{field.duration.requered}")
 	private Long duration;
 
 	@Column(nullable = false)
 	private boolean done;
 
 	@ManyToOne
-	@JoinColumn(name = "person_id", nullable = false)
+	@JoinColumn(name = "person_id")
 	private Person person;
 }
