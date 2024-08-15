@@ -1,4 +1,4 @@
-📚 Perinity GestaSI - API de Gerenciamento de Pessoas e Tarefas
+📚 Perinity GestaoSI - API de Gerenciamento de Pessoas e Tarefas
 Esse é um projeto de API para gerenciar pessoas e tarefas. A API permite criar, atualizar, excluir e listar pessoas e tarefas, além de gerar relatórios simples de alocação de tarefas e horas trabalhadas.
 
 🛠️ Tecnologias Utilizadas
